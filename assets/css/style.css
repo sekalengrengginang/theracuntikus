@@ -52,23 +52,28 @@ nav h1 {
   padding: 10px 10px 10px 10px;
   text-align: center;
 }
- h1{
-  font-family: 'Signika',sans-serif;
+.text-below-content{
   text-align: center;
+  font-family: 'Signika',sans-serif;
+  color: #E8E8E8;
 }
 
-/* heroes */
-.heroes {
+/* main page */
+.hero{
   font-family: "Urbanist", sans-serif;
-  font-size: 40px;
-  width: auto;
-  height: 500px;
-  margin-bottom: 50px;
   display: flex;
-  flex-direction: column;
-  margin-top: 10px;
-  border-radius: 30px;
+  flex-direction: row;
   background-color: #F05454;
+  border-radius: 30px;
+}
+.hero h1{
+  font-size: 70px;
+  text-align: center;
+}
+.hero p{
+  text-align: left;
+  padding-left: 10px;
+  font-size: 30px;
 }
 .cat-picture {
   display: flex;
@@ -81,7 +86,6 @@ nav h1 {
 footer{
   text-align: center;
   font-family: "Urbanist", sans-serif;
-  background-color: #222831;
   color: #E8E8E8;
 }
 
@@ -103,11 +107,13 @@ footer{
   nav h1 {
     display: none;
   }
-  .heroes{
+  .hero{
     flex-direction: column;
   }
   .cat-picture{
-    display: none;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 0px;
   }
   .content-testimonial{
     font-size: 10px;
