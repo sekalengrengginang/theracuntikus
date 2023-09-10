@@ -36,14 +36,14 @@ nav h1 {
   color:#E8E8E8;
   font-family: "Urbanist", sans-serif;
   display: flex;
-  flex-flow: row;
+  justify-content: space-around;
 }
 .content-testimonial{
   font-family: "Urbanist", sans-serif;
   font-size: 20px;
-  width: auto;
+  width: 400px;
   height: auto;
-  margin-left: 10px;
+  margin: 10px;
   border-radius: 10px;
   background-color: #F05454;
 }
@@ -52,7 +52,10 @@ nav h1 {
   padding: 10px 10px 10px 10px;
   text-align: center;
 }
-
+ h1{
+  font-family: 'Signika',sans-serif;
+  text-align: center;
+}
 
 /* heroes */
 .heroes {
@@ -62,21 +65,25 @@ nav h1 {
   height: 500px;
   margin-bottom: 50px;
   display: flex;
+  flex-direction: column;
   margin-top: 10px;
   border-radius: 30px;
-  box-shadow: white;
   background-color: #F05454;
 }
-td h1{
-  margin: auto;
-}
 .cat-picture {
-  width: 400px;
-  height: 400px;
-  padding-left: 20px;
-  border-radius: 15%;
+  display: flex;
+  width: auto;
+  height: 500px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
 }
 
+footer{
+  text-align: center;
+  font-family: "Urbanist", sans-serif;
+  background-color: #222831;
+  color: #E8E8E8;
+}
 
 /* responsive */
 @media screen and (max-width: 768px) {
@@ -97,13 +104,15 @@ td h1{
     display: none;
   }
   .heroes{
-    font-size: 20px;
+    flex-direction: column;
   }
   .cat-picture{
-    width: 100px;
-    height: 100px;
+    display: none;
   }
   .content-testimonial{
+    font-size: 10px;
+  }
+  footer{
     font-size: 10px;
   }
 }
