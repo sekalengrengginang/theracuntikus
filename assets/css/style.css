@@ -1,7 +1,6 @@
 /* Urbanist Font */
 @import url("https://fonts.googleapis.com/css2?family=Urbanist&display=swap");
-/* Signika Font */
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&family=Signika+Negative&display=swap");
+/* background color dan font  */
 body {
   background-color: #040f0f;
   font-family: "Urbanist", sans-serif;
@@ -9,12 +8,17 @@ body {
 /* navigation bar */
 nav {
   display: flex;
-  background-color: #213555;
-  border-radius: 20px;
-  margin-bottom: 20px;
+  flex-direction: row;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #264E70;
+  border-radius: 10px;
+  font-size: 30px;
+  margin: 20px 20px 20px 20px;
 }
 nav a {
-  font-size: 40px;
   text-decoration: none;
   color: #e8e8e8;
 }
@@ -22,40 +26,22 @@ nav a:hover {
   color: #4f709c;
 }
 nav li {
-  display: inline;
+  display: flex;
   margin: 10px;
   padding: 10px;
 }
 nav h1 {
   padding-left: 10px;
 }
-/* article */
-article{
-  padding: 20px 20px 20px 20px;
-}
-.article-content{
-  display: flex;
-  width: auto;
-  height: 200px;
-  flex-direction: row;
-  color: #e8e8e8;
-  background-color: #213555;
-  border-radius: 30px;
-}
-.article-content p{
-  margin: 30px;
-  font-size: 40px;
-}
 
 /* main page */
 .utama {
-  padding: 20px 20px 20px 20px;
+  padding: 120px 20px 20px 20px;
 }
 .hero {
   display: flex;
   width: auto;
   height: 600px;
-  flex-direction: row;
   color: #e8e8e8;
   background-color: #213555;
   border-radius: 30px;
@@ -65,14 +51,26 @@ article{
   padding-top: 100px;
   padding-left: 20px;
 }
-.hero p {
-  text-align: left;
-  padding-left: 10px;
-  font-size: 30px;
-}
-.cat-picture {
+.rat-picture {
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
+}
+/* article */
+article{
+  padding: 20px 20px 20px 20px;
+}
+.article-content{
+  display: flex;
+  width: auto;
+  height: 300px;
+  flex-direction: row;
+  color: #e8e8e8;
+  background-color: #213555;
+  border-radius: 20px;
+}
+.article-content p{
+  margin: 30px;
+  font-size: 50px;
 }
 
 /* testimonial */
@@ -83,7 +81,7 @@ article{
 }
 .content-testimonial {
   font-size: 20px;
-  width: 400px;
+  width: auto;
   height: auto;
   margin: 10px;
   border-radius: 10px;
@@ -98,7 +96,7 @@ article{
   color: #e8e8e8;
 }
 
-/* produk */
+/* produk racun tikus */
 .product-card {
   padding: 20px 20px 20px 20px;
   color: #e8e8e8;
@@ -124,6 +122,9 @@ article{
   margin: 0;
   font-size: 20px;
   border-radius: 20px;
+}
+.product button:hover{
+  cursor:pointer;
 }
 .tombol{
   text-align: center;
@@ -173,47 +174,57 @@ article{
   padding-left: 20px;
   font-size: 3vh;
 }
-
+/* footer halaman web */
 footer {
   text-align: center;
   color: #e8e8e8;
 }
 
-/* responsive */
+/* responsive untuk layar 768pixel kebawah*/
 @media screen and (max-width: 768px) {
   nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
     display: flex;
-    padding-bottom: 30px;
-    height: 40px;
+    justify-content:center;
     border-radius: 10px;
-  }
-  nav a {
     font-size: 25px;
+    padding-right: 40px;
   }
-  nav li {
-    display: block;
-  }
-  nav h1 {
+  .logo{
     display: none;
   }
+  .utama {
+    padding: 20px 20px 20px 20px;
+  }
   .hero {
+    margin-top: 80px;
     height: auto;
     flex-direction: column;
   }
   .hero h1 {
+    padding-top: 30px;
     font-size: 5vh;
-    margin-bottom: 80px;
+    margin-top: 0px;
   }
-  .cat-picture {
+  .rat-picture {
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     border-bottom-left-radius: 0px;
   }
-  .article-content p{
-    margin: 35px;
-    font-size: 25px;
+  .article-content{
+    display: flex;
+    width: auto;
+    height: auto;
   }
-  
+  .article-content p{
+    font-size: 30px;
+  }
+  .testimonial-card{
+    flex-direction: column;
+  }
   .content-testimonial {
     font-size: 10px;
   }
@@ -236,5 +247,10 @@ footer {
     font-size: 10px;
   }
 }
-@media screen and (max-width: 768px) {
+/* untuk layar 375pixel kebawah */
+@media screen and (max-width: 375px){
+  nav{
+    font-size: 20px;
+    padding-right: 40px;
+  }
 }

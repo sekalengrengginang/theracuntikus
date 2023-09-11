@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
+    <!-- metadata untuk menyesuaikan konten web untuk masing2 perangkat seperti perangkat seluler -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TheRacunTikus</title>
     <link rel="stylesheet" href="/assets/css/style.css" />
@@ -10,25 +10,25 @@
     <!-- navbar -->
     <header>
       <nav>
-        <h1><a href="#beranda">TheRacunTikus</a></h1>
+        <li><a href="#beranda" class="logo">TheRacunTikus</a></li>
         <li><a href="#beranda">Beranda</a></li>
         <li><a href="#produk">Produk</a></li>
         <li><a href="#tentang">Tentang</a></li>
       </nav>
     </header>
     <main>
-      <!-- heroes -->
-      <div class="utama">
+      <!-- bagian hero yaoitu bagian paling atas setelah navbar -->
+      <div class="utama" id="beranda">
         <div class="hero">
-          <img src="/assets/pictures/rat.jpg" alt="rat" class="cat-picture" />
+          <img src="/assets/pictures/rat.jpg" alt="rat" class="rat-picture" />
           <h1>
             Racun tikus, tanpa ribet.<br />Kami menghadirkan racun tikus yang
             efektif dan enggak ribet!
           </h1>
         </div>
       </div>
-      <!-- penjelasan -->
-      <article id="beranda">
+      <!-- artikel utama -->
+      <article>
         <div class="article-content">
           <p>
             Dengan racun tikus dari TheRacunTikus, rumah anda akan bebas dari
@@ -42,118 +42,114 @@
       <div class="testimonial-card">
         <div class="content-testimonial">
           <h1>Produk ini keren banget, tikus dirumahku akhirnya musnah!</h1>
-          <h1>-Taki</h1>
+          <h1>- Taki</h1>
         </div>
         <div class="content-testimonial">
           <h1>Sekali pakai, tikus langsung ketar-ketir!</h1>
-          <h1>-Amane</h1>
+          <h1>- Ranna</h1>
         </div>
         <div class="content-testimonial">
           <h1>Saya sudah coba merk lain, yang ampuh cuma ini!</h1>
-          <h1>-Anon</h1>
+          <h1>- Anon</h1>
         </div>
       </div>
       <!-- produk -->
-      <h1 class="text-below-content">Produk</h1>
-      <div class="product-card" id="produk">
+      <h1 class="text-below-content"id="produk">Produk</h1>
+      <div class="product-card" >
         <div class="product">
           <img
-            src="/assets/pictures/rat.jpg"
-            alt=""
-            srcset=""
+            src="/assets/pictures/racuntikus.png"
+            alt="botol-racuntikus"
             class="product-image"
           />
           <h1>Racun tikus 200ml</h1>
           <div>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum
-              modi nemo corporis blanditiis dolorum molestias reiciendis
-              voluptate porro fugiat! Distinctio fugiat nisi molestiae sit rerum
-              aperiam quas perferendis suscipit ullam!
+              Cocok untuk anak kos dan kontrakan kecil
             </p>
+            <h1>Rp.25.000</h1>
             <div class="tombol"><button>Beli</button></div>
           </div>
         </div>
         <div class="product">
           <img
-            src="/assets/pictures/rat.jpg"
-            alt=""
-            srcset=""
+            src="/assets/pictures/racuntikus.png"
+            alt="botol-racuntikus"
             class="product-image"
           />
           <h1>Racun tikus 400ml</h1>
           <div>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum
-              modi nemo corporis blanditiis dolorum molestias reiciendis
-              voluptate porro fugiat! Distinctio fugiat nisi molestiae sit rerum
-              aperiam quas perferendis suscipit ullam!
+              Cocok untuk Rumah kecil yang tidak memiliki banyak kamar
             </p>
+            <h1>Rp.45.000</h1>
             <div class="tombol"><button>Beli</button></div>
           </div>
         </div>
         <div class="product">
           <img
-            src="/assets/pictures/rat.jpg"
-            alt=""
-            srcset=""
+            src="/assets/pictures/racuntikus.png"
+            alt="botol-racuntikus"
             class="product-image"
           />
           <h1>Racun tikus 600ml</h1>
           <div>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum
-              modi nemo corporis blanditiis dolorum molestias reiciendis
-              voluptate porro fugiat! Distinctio fugiat nisi molestiae sit rerum
-              aperiam quas perferendis suscipit ullam!
+              Cocok untuk Rumah sedang yang tidak terlalu memiliki banyak kamar
             </p>
+            <h1>Rp.80.000</h1>
             <div class="tombol"><button>Beli</button></div>
           </div>
         </div>
         <div class="product">
           <img
-            src="/assets/pictures/rat.jpg"
-            alt=""
-            srcset=""
+            src="/assets/pictures/racuntikus.png"
+            alt="botol-racuntikus"
             class="product-image"
           />
           <h1>Racun tikus 800ml</h1>
           <div>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum
-              modi nemo corporis blanditiis dolorum molestias reiciendis
-              voluptate porro fugiat! Distinctio fugiat nisi molestiae sit rerum
-              aperiam quas perferendis suscipit ullam!
+              Cocok untuk Rumah besar yang mempunyai banyak ruangan dan industri
             </p>
+            <h1>Rp.150.000</h1>
             <div class="tombol"><button>Beli</button></div>
           </div>
         </div>
       </div>
     </main>
+    <!-- tentang perusahaan rts dengan aside  -->
     <aside id="tentang">
       <div id="beranda">
         <div class="about-section">
           <div class="about-content">
             <img
-              src="/assets/pictures/rat.jpg"
-              alt="rat"
+              src="/assets/pictures/rts.png"
+              alt="rts-logo"
               class="about-picture"
             />
             <div class="about-article">
-              <h1>Tentang</h1>
+              <h1>Tentang Kami</h1>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Laudantium consequuntur placeat provident voluptate tempora enim
-                accusantium odit maxime a pariatur velit ducimus quidem
-                laboriosam, recusandae dolores. Earum dolorem mollitia dolor!
+                Kami merupakan Perusahaan yang berfokus dibidang pembasmian hama
+                sejak 201X, Perusahaan kami didirikan karena pendiri kami yaitu
+                Mrs Hanae kesal dengan harga Racun tikus yang terus melonjak
+                tetapi dengan kualitas yang buruk. Dengan modal hanya
+                Rp.10.000.000 Mrs Hanae mendirikan Perusahaan RTS (Racun Tikus
+                Sejahtera), pada awalnya perusahaan ini merugi besar dikarenakan
+                pasar racun tikus yang ketat, dengan bermodalkan promosi yang
+                besar-besaran akhirnya PT RTS bisa mendapatkan untung dengan
+                melakukan sosialisasi tentang dampak tikus terhadap tanaman padi
+                dan manusia.
               </p>
             </div>
           </div>
         </div>
       </div>
     </aside>
+    <!-- footer website ini -->
     <footer>
-      <h1>Hak cipta oleh PT Racun Tikus Sejahtera 2023</h1>
+      <h1>Hak cipta oleh &copy; PT Racun Tikus Sejahtera 2023</h1>
     </footer>
   </body>
 </html>
