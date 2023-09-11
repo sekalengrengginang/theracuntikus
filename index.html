@@ -10,33 +10,26 @@
     <!-- navbar -->
     <header>
       <nav>
-        <h1><a href="">TheRacunTikus</a></h1>
-        <li><a href="">Beranda</a></li>
-        <li><a href="">Produk</a></li>
-        <li><a href="">Tentang</a></li>
+        <h1><a href="#beranda">TheRacunTikus</a></h1>
+        <li><a href="#beranda">Beranda</a></li>
+        <li><a href="#produk">Produk</a></li>
+        <li><a href="#tentang">Tentang</a></li>
       </nav>
     </header>
     <main>
-      <div class="hero">
-        <img src="/assets/pictures/cat.jpg" alt="kucing" class="cat-picture" />
-        <table>
-          <tr>
-            <td>
-            <h1>Racun tikus, tanpa ribet</h1>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Suscipit, eum fugiat? Delectus ipsam quidem cupiditate
-                consectetur nesciunt nihil placeat odio aliquid nostrum dolorum
-                a vero ea et, tenetur fugit incidunt!
-              </p>
-            </td>
-          </tr>
-        </table>
-      </div>
+      <article id="beranda">
+        <div class="hero">
+          <img
+            src="/assets/pictures/rat.jpg"
+            alt="kucing"
+            class="cat-picture"
+          />
+          <h1>
+            Racun tikus, tanpa ribet.<br />Kami menghadirkan racun tikus yang
+            efektif dan enggak ribet!
+          </h1>
+        </div>
+      </article>
       <h1 class="text-below-content">Testimonial</h1>
       <!-- testimonial -->
       <div class="testimonial-card">
@@ -73,8 +66,60 @@
           </table>
         </div>
       </div>
+      <!-- produk -->
       <h1 class="text-below-content">Produk</h1>
+      <div class="product-card" id="produk">
+        <div class="product">
+          <h1>Racun tikus 200ml</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum modi
+            nemo corporis blanditiis dolorum molestias reiciendis voluptate
+            porro fugiat! Distinctio fugiat nisi molestiae sit rerum aperiam
+            quas perferendis suscipit ullam!
+          </p>
+          <button>Beli</button>
+        </div>
+        <div class="product">
+          <h1>Racun tikus 200ml</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum modi
+            nemo corporis blanditiis dolorum molestias reiciendis voluptate
+            porro fugiat! Distinctio fugiat nisi molestiae sit rerum aperiam
+            quas perferendis suscipit ullam!
+          </p>
+          <button>Beli</button>
+        </div>
+        <div class="product">
+          <h1>Racun tikus 200ml</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum modi
+            nemo corporis blanditiis dolorum molestias reiciendis voluptate
+            porro fugiat! Distinctio fugiat nisi molestiae sit rerum aperiam
+            quas perferendis suscipit ullam!
+          </p>
+          <button>Beli</button>
+        </div>
+        <div class="product">
+          <h1>Racun tikus 200ml</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum modi
+            nemo corporis blanditiis dolorum molestias reiciendis voluptate
+            porro fugiat! Distinctio fugiat nisi molestiae sit rerum aperiam
+            quas perferendis suscipit ullam!
+          </p>
+          <button onclick="alert('barang berhasil dibeli!')">Beli</button>
+        </div>
+      </div>
     </main>
+    <aside>
+      <div>
+        <h1>Tentang Kami</h1>
+        <p>
+          Kami merupakan perusahaan yang fokus dibidang racun tikus, misi kami
+          adalah mengurangi tikus yang mengganggu dirumah anda
+        </p>
+      </div>
+    </aside>
     <footer>
       <h1>Hak cipta oleh PT Racun Tikus Sejahtera 2023</h1>
     </footer>
